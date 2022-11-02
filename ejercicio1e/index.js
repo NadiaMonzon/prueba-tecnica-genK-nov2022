@@ -11,10 +11,10 @@ for (let i = 1; i < 1001; i++) {
     bodyContent.appendChild(newButton)
 
     function changeTheLetterOnMouseOver(){
-        newButton.innerHTML = '1 botóN';
+        newButton.innerHTML = i + ' '+ 'botóN';
     }
     function changeTheLetterOnMouseOut(){
-        newButton.innerHTML = '1 botón';
+        newButton.innerHTML = i + ' '+ 'botón';
     }
     
     

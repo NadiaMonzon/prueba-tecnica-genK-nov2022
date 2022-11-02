@@ -21,6 +21,7 @@ const array2 = [
     const result = [firstResult, secondResult, thirdResult]
 
     return result;
+    
 }
 
 function convertToString(result){
@@ -31,7 +32,7 @@ function convertToString(result){
     .map((number)=>{
         if (number.length ===2){
             number = '0'+ number
-        }else if(number.length ===2){
+        }else if(number.length ===1){
             number = '00'+ number
         }
         return number
