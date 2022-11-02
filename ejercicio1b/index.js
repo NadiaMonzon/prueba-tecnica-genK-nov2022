@@ -7,13 +7,13 @@ newButton.appendChild(buttonContent);
 const bodyContent = document.body;
 bodyContent.appendChild(newButton)
 
-function mouseOver(){
+function changeTheLetterOnMouseOver(){
     newButton.innerHTML = '1 botóN';
 }
-function mouseOut(){
+function changeTheLetterOnMouseOut(){
     newButton.innerHTML = '1 botón';
 }
 
 
-newButton.addEventListener('mouseover', mouseOver)
-newButton.addEventListener('mouseout', mouseOut)
+newButton.addEventListener('mouseover', changeTheLetterOnMouseOver)
+newButton.addEventListener('mouseout', changeTheLetterOnMouseOut)

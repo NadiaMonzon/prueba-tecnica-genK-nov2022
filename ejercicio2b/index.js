@@ -29,7 +29,6 @@ function convertToString(result){
     .toString()
     .split(',')
     .map((number)=>{
-        console.log(number);
         if (number.length ===2){
             number = '0'+ number
         }else if(number.length ===2){
@@ -37,7 +36,7 @@ function convertToString(result){
         }
         return number
     });
-    
+
     return resultString;
   }
 

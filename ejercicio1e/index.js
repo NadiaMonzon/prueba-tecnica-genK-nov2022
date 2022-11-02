@@ -10,13 +10,14 @@ for (let i = 1; i < 1001; i++) {
     
     bodyContent.appendChild(newButton)
 
-    function mouseOver(){
-        newButton.innerHTML = i + ' ' + 'botóN';
+    function changeTheLetterOnMouseOver(){
+        newButton.innerHTML = '1 botóN';
     }
-    function mouseOut(){
-        newButton.innerHTML = i + ' ' + 'botón';
+    function changeTheLetterOnMouseOut(){
+        newButton.innerHTML = '1 botón';
     }
-
-    newButton.addEventListener('mouseover', mouseOver)
-    newButton.addEventListener('mouseout', mouseOut)
+    
+    
+    newButton.addEventListener('mouseover', changeTheLetterOnMouseOver)
+    newButton.addEventListener('mouseout', changeTheLetterOnMouseOut)
 }
