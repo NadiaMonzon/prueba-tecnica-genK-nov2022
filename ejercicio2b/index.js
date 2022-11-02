@@ -19,7 +19,26 @@ const array2 = [
     const thirdResult = array1[2][0] * array2[0][2] + array1[2][1] * array2[1][2] + array1[2][2] * array2[2][2];
 
     const result = [firstResult, secondResult, thirdResult]
+
     return result;
+}
+
+function convertToString(result){
+
+    const resultString = result
+    .toString()
+    .split(',')
+    .map((number)=>{
+        console.log(number);
+        if (number.length ===2){
+            number = '0'+ number
+        }else if(number.length ===2){
+            number = '00'+ number
+        }
+        return number
+    });
+    
+    return resultString;
   }
-  
-  console.log(getTheRowsSolutions ());
+
+  console.log(convertToString(getTheRowsSolutions ()));
